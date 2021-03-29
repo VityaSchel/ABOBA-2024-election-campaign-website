@@ -1,0 +1,51 @@
+#zyabls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#zyabls #zyabls-content {
+  width: 60%;
+  padding: 25px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+@media screen and (orientation: portrait) {
+  #zyabls #zyabls-content {
+    width: 100%;
+    padding: 15px;
+  }
+}
+#zyabls #zyabls-content #gallery-ribbon {
+  width: 100%;
+  height: 10vw;
+  overflow-y: hidden;
+  display: flex;
+}
+@media screen and (orientation: portrait) {
+  #zyabls #zyabls-content #gallery-ribbon {
+    flex-direction: column;
+    height: max-content;
+  }
+}
+#zyabls #zyabls-content #gallery-ribbon .ribbon-photo-container {
+  flex: 1;
+  width: 0;
+  height: 100%;
+  border-right: 3px solid white;
+}
+@media screen and (orientation: portrait) {
+  #zyabls #zyabls-content #gallery-ribbon .ribbon-photo-container {
+    width: 100%;
+  }
+}
+#zyabls #zyabls-content #gallery-ribbon .ribbon-photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#zyabls #zyabls-content #gallery-ribbon .ribbon-photo-container.wide {
+  flex: 3;
+}
+/*# sourceMappingURL=Zyabls.css.map */

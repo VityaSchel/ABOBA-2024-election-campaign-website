@@ -1,0 +1,266 @@
+@import url('../public/fonts/absolutelyLegalOpenFont/stylesheet.css');
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWyV-hs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem6YaGs126MiZpBA-UFUJ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKXGUehs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUOhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKW-U-hs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8-VQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-U1Ug.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirk-VQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rg-VQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rs-VQ.ttf) format('truetype');
+}
+@media screen and (orientation: portrait) {
+  html {
+    overflow-x: hidden;
+  }
+}
+body {
+  margin: 0;
+}
+.pseudo-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71429;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #0d7fa3;
+  text-decoration: none;
+  margin: 0;
+}
+.primary-heading {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1;
+  font-family: 'Graphik LCG', Helvetica, sans-serif;
+  color: #2e3335;
+  font-style: italic;
+  letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: #dfe4eb;
+}
+main {
+  margin-top: 80px;
+}
+main #banner {
+  height: fit-content;
+  padding: 45px 0;
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (orientation: portrait) {
+  main #banner {
+    padding: 0;
+    background-position: center;
+  }
+}
+main #banner.press {
+  background-image: url('../public/images/aboba-photo.png');
+}
+@media screen and (orientation: landscape) and (max-width: 1280px) {
+  main #banner.press {
+    background-position: center;
+  }
+}
+@media screen and (orientation: portrait) {
+  main #banner.press {
+    background-position: left top;
+    background-size: 600px;
+  }
+}
+main #banner.family {
+  background-image: url('../public/images/aboba-family.jpeg');
+}
+main #banner.krolik {
+  background-image: url('../public/images/aboba-krolik.png');
+}
+@media screen and (orientation: portrait) {
+  main #banner.krolik {
+    background-position: center 50vh;
+  }
+}
+@media screen and (orientation: portrait) {
+  main #banner.krolik #banner--container.shrink {
+    margin-top: 200px;
+  }
+}
+main #banner.puregray {
+  background-color: #f2f5fa;
+}
+main #banner.europecity {
+  background-image: url('../public/images/europe-city.jpg');
+}
+main #banner #banner--container {
+  padding: 30px 25px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+}
+@media screen and (orientation: portrait) {
+  main #banner #banner--container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+}
+main #banner #banner--container.shrink {
+  width: 60%;
+}
+@media screen and (orientation: portrait) {
+  main #banner #banner--container.shrink {
+    width: 100%;
+  }
+}
+main #banner #banner--container.super-shrink {
+  width: 55%;
+}
+@media screen and (orientation: portrait) {
+  main #banner #banner--container.super-shrink {
+    width: 100%;
+    margin: 15px;
+  }
+}
+main #banner #banner--container.super-shrink div#get-in-promo {
+  padding: 20px 95px;
+}
+@media screen and (orientation: portrait) {
+  main #banner #banner--container.super-shrink div#get-in-promo {
+    padding: 15px;
+  }
+}
+main #banner #banner--container #video-popup-link {
+  display: flex;
+  align-items: flex-end;
+}
+@media screen and (orientation: portrait) {
+  main #banner #banner--container #video-popup-link {
+    justify-content: flex-end;
+  }
+  main #banner #banner--container #video-popup-link button > span {
+    display: none;
+  }
+}
+main #banner #banner--container #short-bio {
+  width: 570px;
+}
+@media screen and (orientation: portrait) {
+  main #banner #banner--container #short-bio {
+    width: 100%;
+    margin-top: 200px;
+  }
+}
+@media screen and (orientation: portrait) {
+  main #banner #banner--container #long-bio {
+    margin-top: 200px;
+  }
+}
+h1#slogan {
+  filter: drop-shadow(-4px 2px 6px rgba(0, 0, 0, 0.25));
+}
+@media screen and (orientation: portrait) {
+  h1#slogan {
+    margin: 0;
+  }
+}
+h1#slogan span {
+  display: inline-block;
+  padding: 0px 2px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 1.33333;
+  font-family: 'Graphik LCG', 'Open Sans', Helvetica, sans-serif;
+  color: #ffffff;
+  font-style: italic;
+  background-color: #ff3300;
+  font-size: 45px;
+}
+@media screen and (orientation: portrait) {
+  h1#slogan span {
+    font-size: 1.8rem;
+  }
+  h1#slogan span:nth-child(1) {
+    transform: translateY(2px);
+  }
+}
+div#get-in-promo {
+  font-size: 14px;
+  line-height: 1.71429;
+  color: #2e3335;
+  background-color: #fff;
+  padding: 30px;
+}
+@media screen and (orientation: portrait) {
+  div#get-in-promo {
+    padding: 30px 15px;
+  }
+}
+div#get-in-promo div#text-promo {
+  font-weight: 400;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/*# sourceMappingURL=Banner.css.map */

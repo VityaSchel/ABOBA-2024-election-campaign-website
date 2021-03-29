@@ -1,0 +1,227 @@
+@import url('../public/fonts/absolutelyLegalOpenFont/stylesheet.css');
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWyV-hs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem6YaGs126MiZpBA-UFUJ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKXGUehs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUOhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKW-U-hs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8-VQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-U1Ug.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirk-VQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rg-VQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rs-VQ.ttf) format('truetype');
+}
+@media screen and (orientation: portrait) {
+  html {
+    overflow-x: hidden;
+  }
+}
+body {
+  margin: 0;
+}
+.pseudo-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71429;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #0d7fa3;
+  text-decoration: none;
+  margin: 0;
+}
+.primary-heading {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1;
+  font-family: 'Graphik LCG', Helvetica, sans-serif;
+  color: #2e3335;
+  font-style: italic;
+  letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: #dfe4eb;
+}
+header {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  min-height: 50px;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+}
+@media screen and (orientation: portrait) {
+  header {
+    justify-content: space-between;
+  }
+}
+header nav {
+  padding: 0 25px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (orientation: portrait) {
+  header nav {
+    width: 100%;
+  }
+}
+header nav #left-side,
+header nav #right-side {
+  width: fit-content;
+  display: inline-block;
+  vertical-align: middle;
+}
+header nav #left-side {
+  display: flex;
+  align-items: center;
+}
+header nav #left-side > a {
+  display: flex;
+  align-items: center;
+}
+header nav #left-side > * {
+  vertical-align: middle;
+}
+header nav #left-side img#logo {
+  width: 170px;
+  margin-right: 30px;
+}
+@media screen and (orientation: landscape) and (max-width: 1280px) {
+  header nav #left-side #top-nav {
+    min-width: max-content;
+  }
+}
+@media screen and (orientation: portrait) {
+  header nav #left-side #top-nav {
+    display: none;
+  }
+}
+@media screen and (orientation: portrait) {
+  header nav #right-side {
+    display: none;
+  }
+}
+header nav .toplink {
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #0d7fa3;
+  text-transform: uppercase;
+  padding: 5px 15px;
+}
+header nav button#support {
+  padding: 16px 20px;
+  border: 1px solid #0d7fa3;
+  background-color: transparent;
+  border-radius: 3px;
+  line-height: 1;
+  cursor: pointer;
+}
+header nav #menu-mobile-icon {
+  display: none;
+}
+@media screen and (orientation: portrait) {
+  header nav #menu-mobile-icon {
+    display: block;
+  }
+}
+header nav #menu-mobile-icon svg {
+  transform: scale(1.5);
+}
+header nav #float-menu {
+  display: none;
+}
+@media screen and (orientation: portrait) {
+  header nav #float-menu {
+    display: block;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    overflow-y: hidden;
+    transition: 0.2s ease-out height;
+  }
+  header nav #float-menu div#top-nav {
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+  header nav #float-menu div#top-nav a {
+    padding: 15px;
+  }
+}
+.button-transparent {
+  border: none;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+/*# sourceMappingURL=Header.css.map */

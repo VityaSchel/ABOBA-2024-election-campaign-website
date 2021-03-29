@@ -1,0 +1,86 @@
+#aboba-donaters h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#aboba-donaters .aboba-donate:not(:nth-child(2)) {
+  margin-top: 20px;
+}
+#aboba-donaters .aboba-donate span {
+  display: block;
+}
+#aboba-donaters .aboba-donate .donate-name,
+#aboba-donaters .aboba-donate .donate-amount,
+#aboba-donaters .aboba-donate p {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #2e3335;
+}
+#aboba-donaters .aboba-donate .donate-name {
+  font-weight: 600;
+}
+#aboba-donaters .aboba-donate .donate-amount {
+  color: #6f6f6f;
+}
+#aboba-donaters .aboba-donate p {
+  margin: 0;
+}
+#contact-flex {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+@media screen and (orientation: portrait) {
+  #contact-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#contact-flex #contact-left-col {
+  width: 23%;
+}
+@media screen and (orientation: portrait) {
+  #contact-flex #contact-left-col {
+    width: 100%;
+    text-align: center;
+  }
+}
+#contact-flex #contact-left-col h3 {
+  font-size: 18px;
+  letter-spacing: normal;
+  margin: 0;
+}
+#contact-flex #contact-right-col {
+  width: 65%;
+}
+@media screen and (orientation: portrait) {
+  #contact-flex #contact-right-col {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+#contact-flex #contact-right-col .contact-person {
+  display: flex;
+  margin-bottom: 15px;
+}
+#contact-flex #contact-right-col .contact-person img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100%;
+}
+#contact-flex #contact-right-col .contact-person .person-info {
+  margin-left: 15px;
+}
+#contact-flex #contact-right-col .contact-person .person-info h4 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38462;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #2e3335;
+}
+#contact-flex #contact-right-col .contact-person .person-info .person-note {
+  font-size: 12px;
+  display: block;
+}
+/*# sourceMappingURL=Contact.css.map */
