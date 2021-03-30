@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from "react"
 
 interface IPublicEventProps {
-  year: Number;
-  title: String;
+  year: number;
+  title: string;
 }
 
 class PublicEvent extends Component<IPublicEventProps> {
@@ -17,7 +17,7 @@ class PublicEvent extends Component<IPublicEventProps> {
 }
 
 export default class PublicRibbon extends React.Component {
-  render(){
+  render(): void {
     return (
       <div id="public-ribbon">
         <div id="ribbon-items">

@@ -1,12 +1,7 @@
-import React from 'react'
-import Link from 'next/link'
+import React from "react"
 
 export default class Footer extends React.Component {
-  constructor(props){
-    super(props)
-  }
-
-  render(){
+  render(): void {
     return (
       <footer>
         <div id="footer-info">
@@ -15,13 +10,13 @@ export default class Footer extends React.Component {
             <a href="mailto:gadza1488@гадзы.online" className="pseudo-link">gadza1488@гадзы.online</a>
           </div>
           <div id="note">
-              <p>
+            <p>
                 Сайт сделан в память о пожилом воине донбасса Валере, умершем в 2016 году под давлением шкилы,
                 на замену которому пришел пенчик и бесконечные слеты маски.
-              </p>
-              <p>
+            </p>
+            <p>
                 Когда-нибудь саша citinez обязательно скинет деду сайт для заказа рофл-звонков...
-              </p>
+            </p>
           </div>
         </div>
       </footer>

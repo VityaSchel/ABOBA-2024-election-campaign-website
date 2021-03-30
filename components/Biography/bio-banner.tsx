@@ -1,6 +1,6 @@
-import React from 'react'
-import Form from '../Common/form'
-import Slogan from '../Common/slogan'
+import React from "react"
+import Form from "../Common/form"
+import Slogan from "../Common/slogan"
 
 class LongBioText extends React.Component {
   render(){
@@ -33,7 +33,7 @@ class LongBio extends React.Component {
 }
 
 export default class BioBanner extends React.Component {
-  render(){
+  render(): void{
     return (
       <div id="banner" className="family">
         <div id="banner--container" className="shrink">

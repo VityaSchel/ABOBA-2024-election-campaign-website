@@ -1,14 +1,13 @@
-import React from 'react'
-import Link from 'next/link'
-import {default as $D} from 'dedent'
-import Form from '../Common/form'
-import FullScreenVideo from './fullscreenvideo'
-import Slogan from '../Common/slogan'
+import React from "react"
+import Link from "next/link"
+import Form from "../Common/form"
+import FullScreenVideo from "./fullscreenvideo"
+import Slogan from "../Common/slogan"
 
-let fullScreenVideoRef = React.createRef()
+const fullScreenVideoRef = React.createRef()
 class VideoPopupLink extends React.Component {
-  handleClick (props){
-    fullScreenVideoRef.current.fullscreenref.current.style.display = 'block'
+  handleClick (){
+    fullScreenVideoRef.current.fullscreenref.current.style.display = "block"
   }
 
   render(){

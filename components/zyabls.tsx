@@ -1,8 +1,7 @@
-import React from 'react'
-import Link from 'next/link'
-import ZyablsBanner from './Zyabls/zyablsbanner'
-import SupportWidget from './Common/supportwidget'
-import GalleryRibbon from './Common/galleryribbon'
+import React from "react"
+import ZyablsBanner from "./Zyabls/zyablsbanner"
+import SupportWidget from "./Common/supportwidget"
+import GalleryRibbon from "./Common/galleryribbon"
 
 class ZyablsInfo extends React.Component {
   render(){
@@ -15,7 +14,7 @@ class ZyablsInfo extends React.Component {
             Объект А имеет способность навязывать свой стиль речи людям
             которые находятся в длительном контакте с SCP-14228. После
             того как жертва SCP-14228 начинает говорить как субъект, она
-            превращается в так называемого "ЗЯБЛА". Зябл повторяет действия
+            превращается в так называемого &quot;ЗЯБЛА&quot;. Зябл повторяет действия
             субъекта в течении 24 часов после чего умирает.
           </p>
           <GalleryRibbon />

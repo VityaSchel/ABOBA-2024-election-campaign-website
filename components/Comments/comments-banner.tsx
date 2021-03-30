@@ -1,5 +1,5 @@
-import React from 'react'
-import Form from '../Common/form'
+import React from "react"
+import Form from "../Common/form"
 
 class ContactInfo extends React.Component {
   render(){
@@ -22,7 +22,7 @@ class ContactInfo extends React.Component {
 }
 
 export default class PeopleComments extends React.Component {
-  render(){
+  render(): void {
     return (
       <div id="banner" className="europecity">
         <div id="banner--container" className="super-shrink">

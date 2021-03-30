@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react"
 
 export default class Form extends React.Component {
   constructor (props){
-    super(props);
+    super(props)
 
     this.mail = React.createRef()
     this.submit = React.createRef()
@@ -10,16 +10,16 @@ export default class Form extends React.Component {
 
   handleSubmit(event): void {
     event.preventDefault()
-    this.mail.current.setAttribute('disabled', 'disabled')
-    this.submit.current.setAttribute('disabled', 'disabled')
-    this.submit.current.innerText = 'Готово'
+    this.mail.current.setAttribute("disabled", "disabled")
+    this.submit.current.setAttribute("disabled", "disabled")
+    this.submit.current.innerText = "Готово"
   }
 
-  render(){
+  render() {
     return (
       <form onSubmit={e => this.handleSubmit(e)}>
         <input type="email" name='email' placeholder="Ваша электронная почта"
-               required ref={this.mail} autocomplete='on' autocompletetype='email'/>
+          required ref={this.mail} autoComplete='on' autocompletetype='email'/>
         <button type="submit" ref={this.submit} className="glow-button">Зарегистрироваться</button>
       </form>
     )

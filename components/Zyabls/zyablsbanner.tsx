@@ -1,5 +1,5 @@
-import React from 'react'
-import Form from '../Common/form'
+import React from "react"
+import Form from "../Common/form"
 
 class ZyablsInfo extends React.Component {
   render(){

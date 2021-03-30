@@ -1,16 +1,19 @@
-import AppHead from '../data/AppHead'
-import Header from '../components/Common/header'
-import Footer from '../components/Common/footer'
-import Comments from '../components/comments'
+import React, { Component } from "react"
+import AppHead from "../data/AppHead"
+import Header from "../components/Common/header"
+import Footer from "../components/Common/footer"
+import Comments from "../components/comments"
 
-export default function Bio(): JSX.Element {
-  return (
-    <div>
-      <AppHead />
+export default class Bio extends Component {
+  render(): void {
+    return (
+      <div>
+        <AppHead />
 
-      <Header />
-      <Comments />
-      <Footer />
-    </div>
-  )
+        <Header />
+        <Comments />
+        <Footer />
+      </div>
+    )
+  }
 }

@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'next/link'
-import donaters from '../../data/donaters.tsx'
+import React from "react"
+import Link from "next/link"
+import donaters from "../../data/donaters.tsx"
 
 class Donate extends React.Component {
   render(){
@@ -10,11 +10,11 @@ class Donate extends React.Component {
         <span className="donate-amount">{this.props.don.amount}</span>
         <p className="donate-message">{this.props.don.message}</p>
         {this.props.don.link === undefined?<></>:
-        <Link href={this.props.don.link.href}>
-          <a className='pseudo-link' target="_blank" rel="nofollow noopener noreferrer">
-            {this.props.don.link.label}
-          </a>
-        </Link>}
+          <Link href={this.props.don.link.href}>
+            <a className='pseudo-link' target="_blank" rel="nofollow noopener noreferrer">
+              {this.props.don.link.label}
+            </a>
+          </Link>}
       </div>
     )
   }

@@ -1,5 +1,5 @@
-import React from 'react'
-import Donaters from './donaters'
+import React from "react"
+import Donaters from "./donaters"
 
 class Person extends React.Component {
   render(){

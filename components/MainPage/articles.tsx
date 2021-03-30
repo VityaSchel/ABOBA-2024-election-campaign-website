@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 
 class Article extends React.Component {
   render(){
@@ -13,10 +13,6 @@ class Article extends React.Component {
 
 class ShortArticlesList extends React.Component {
   render(){
-    interface ArticleInterface {
-      id: number; title: string; date: string;
-    }
-
     return (
       <div id="shorts">
         <Article date="2 апреля">Пена снова вылез из под стола</Article>

@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import SwiperCore, { Pagination, Navigation } from 'swiper'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import Link from 'next/link'
-import slidesData from '../../data/comments'
+import React from "react"
+import SwiperCore, { Pagination, Navigation } from "swiper"
+import { Swiper, SwiperSlide } from "swiper/react"
+import Link from "next/link"
+import slidesData from "../../data/comments"
 
-SwiperCore.use([Pagination, Navigation]);
+SwiperCore.use([Pagination, Navigation])
 
 class Slider extends React.Component {
   render(){
@@ -33,7 +33,7 @@ class Slider extends React.Component {
         <Swiper
           spaceBetween={50}
           slidesPerView={1}
-          onSlideChange={() => console.log('slide change')}
+          onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
           navigation
           pagination={{ clickable: true }}>
