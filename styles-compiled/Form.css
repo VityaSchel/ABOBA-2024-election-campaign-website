@@ -241,24 +241,24 @@ section#last-news div#articles-list div#achievements div#big-thumbs {
     width: 100%;
   }
 }
-section#last-news div#articles-list div#achievements div#big-thumbs article#achievement-article {
+section#last-news div#articles-list div#achievements div#big-thumbs article.achievement-article {
   width: calc(calc(100% / 3) - 30px);
   margin-right: 30px;
   display: inline-block;
   position: relative;
 }
 @media screen and (orientation: portrait) {
-  section#last-news div#articles-list div#achievements div#big-thumbs article#achievement-article {
+  section#last-news div#articles-list div#achievements div#big-thumbs article.achievement-article {
     width: 100%;
     margin-right: 0;
     margin-bottom: 2.14286rem;
   }
 }
-section#last-news div#articles-list div#achievements div#big-thumbs article#achievement-article img {
+section#last-news div#articles-list div#achievements div#big-thumbs article.achievement-article .img-wrapper {
   width: 100%;
   border-radius: 3px;
 }
-section#last-news div#articles-list div#achievements div#big-thumbs article#achievement-article h3 {
+section#last-news div#articles-list div#achievements div#big-thumbs article.achievement-article h3 {
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -273,7 +273,7 @@ section#last-news div#articles-list div#achievements div#big-thumbs article#achi
   font-style: italic;
 }
 @media screen and (orientation: landscape) and (max-width: 1280px) {
-  section#last-news div#articles-list div#achievements div#big-thumbs article#achievement-article h3 {
+  section#last-news div#articles-list div#achievements div#big-thumbs article.achievement-article h3 {
     font-size: 1vw;
   }
 }
@@ -292,19 +292,19 @@ section#last-news div#articles-list div#achievements div#small-thumbs div#small-
   flex-direction: column;
   justify-content: space-between;
 }
-section#last-news div#articles-list div#achievements div#small-thumbs div#small-thumbs-column article#small-achievement-article {
+section#last-news div#articles-list div#achievements div#small-thumbs div#small-thumbs-column article.small-achievement-article {
   display: flex;
 }
-section#last-news div#articles-list div#achievements div#small-thumbs div#small-thumbs-column article#small-achievement-article:not(:nth-last-child(1)) {
+section#last-news div#articles-list div#achievements div#small-thumbs div#small-thumbs-column article.small-achievement-article:not(:nth-last-child(1)) {
   margin-bottom: 10px;
 }
-section#last-news div#articles-list div#achievements div#small-thumbs div#small-thumbs-column article#small-achievement-article img {
-  width: fit-content;
-  height: fit-content;
+section#last-news div#articles-list div#achievements div#small-thumbs div#small-thumbs-column article.small-achievement-article .image-icon-wrapper {
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
 }
-section#last-news div#articles-list div#achievements div#small-thumbs div#small-thumbs-column article#small-achievement-article h3 {
-  width: 100%;
+section#last-news div#articles-list div#achievements div#small-thumbs div#small-thumbs-column article.small-achievement-article h3 {
+  flex: 1;
 }
 #party {
   color: #e70aff;

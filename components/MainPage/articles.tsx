@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 class Article extends React.Component {
   render(){
@@ -45,8 +46,10 @@ interface IAchievement {
 class Achievement extends React.Component<IAchievement> {
   render(){
     return (
-      <article id="achievement-article">
-        <img src={this.props.thumbnail} alt="Превью статьи"/>
+      <article className="achievement-article">
+        <div className="img-wrapper">
+          <Image src={this.props.thumbnail} alt="Превью статьи" layout='fill'/>
+        </div>
         <h3>{this.props.children}</h3>
       </article>
     )
@@ -77,8 +80,10 @@ interface ISmallAchievement {
 class SmallAchievement extends React.Component<ISmallAchievement> {
   render(){
     return (
-      <article id="small-achievement-article">
-        <img src={this.props.thumbnail} alt="Иконка для статьи"/>
+      <article className="small-achievement-article">
+        <div className="image-icon-wrapper">
+          <Image src={this.props.thumbnail} alt="Иконка для статьи" width="40px" height="40px"/>
+        </div>
         <h3 className="pseudo-link">{this.props.children}</h3>
       </article>
     )

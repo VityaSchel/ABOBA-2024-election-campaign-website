@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import scrollIntoView from 'scroll-into-view-if-needed'
 import Hamburger from 'hamburger-react'
 import { useTransition, animated } from "react-spring"
@@ -8,7 +9,7 @@ import useComponentSize from '@rehooks/component-size'
 function MobileHamburger(): React.Component {
   const menuRef = useRef(null)
   const [visible, setVisible] = useState(false)
-  
+
   // | единственная причина, по которой мы вынуждены
   // V использовать функциональный компонент
   const menuHeight = useComponentSize(menuRef).height;
@@ -37,7 +38,8 @@ class Logo extends React.Component {
     return (
       <Link href="/">
         <a>
-          <img src="/images/aboba-logo.svg" id="logo" alt="Логотип АБОБА"/>
+          <Image src="/images/aboba-logo.svg" width="170px" height="40px"
+                 id="logo" alt="Логотип АБОБА"/>
         </a>
       </Link>
     )

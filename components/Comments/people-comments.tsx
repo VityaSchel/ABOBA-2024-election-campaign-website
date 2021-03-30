@@ -1,12 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import slidesData from '../../data/comments'
 
 class Person extends React.Component {
   render(){
     return (
       <div className="contact-person">
-        <img src={this.props.avatar} alt={this.props.alt ?? this.props.name}/>
+        <Image src={this.props.avatar} width="70px" height="70px"
+               alt={this.props.alt ?? this.props.name}/>
         <div className="person-info">
           <h4>{this.props.name}</h4>
           <span className="person-note">{this.props.note}</span>
@@ -72,7 +74,8 @@ class Comments extends React.Component {
       return (
         <div className="comment-block">
           <div className="comment-content">
-            <img src={comment.avatar} alt="Фотография избирателя" className="comment-avatar"/>
+            <Image src={comment.avatar} width="150px" height="150px"
+                   alt="Фотография избирателя" className="comment-avatar"/>
             <div className="comment-text">
               <h3 className="comment-name primary-heading">{comment.name}</h3>
               <h4 className="primary-heading">{comment.position}</h4>

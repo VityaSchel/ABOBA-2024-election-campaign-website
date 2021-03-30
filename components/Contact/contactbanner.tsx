@@ -1,11 +1,13 @@
 import React from 'react'
+import Image from 'next/image'
 import Donaters from './donaters'
 
 class Person extends React.Component {
   render(){
     return (
       <div className="contact-person">
-        <img src={this.props.avatar} alt={this.props.alt ?? this.props.name}/>
+        <Image src={this.props.avatar} width="70px" height="70px"
+               alt={this.props.alt ?? this.props.name}/>
         <div className="person-info">
           <h4>{this.props.name}</h4>
           <span className="person-note">{this.props.note}</span>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Image from 'next/image'
 import SwiperCore, { Pagination, Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Link from 'next/link'
@@ -13,7 +14,8 @@ class Slider extends React.Component {
         <SwiperSlide key={slide.id}>
           <div className="comment-slide">
             <div className="comment-slide-inner">
-              <img src={slide.avatar} alt={`${slide.name} про Абобу`}/>
+              <Image src={slide.avatar} width="150px" height="150px"
+                     alt={`${slide.name} про Абобу`}/>
               <div className="comment-content">
                 <h3 className="primary-heading">{slide.name}</h3>
                 <h4 className="primary-heading">{slide.position}</h4>
