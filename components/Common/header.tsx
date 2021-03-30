@@ -1,18 +1,16 @@
-import React, { useState, useEffect, useRef } from 'react'
-import Link from 'next/link'
-import scrollIntoView from 'scroll-into-view-if-needed'
-import Hamburger from 'hamburger-react'
-import { useTransition, animated } from "react-spring"
-import useComponentSize from '@rehooks/component-size'
+import React, { useState, useRef } from "react"
+import Link from "next/link"
+import scrollIntoView from "scroll-into-view-if-needed"
+import Hamburger from "hamburger-react"
+import useComponentSize from "@rehooks/component-size"
 
 function MobileHamburger(): React.Component {
   const menuRef = useRef(null)
   const [visible, setVisible] = useState(false)
-  
+
   // | единственная причина, по которой мы вынуждены
   // V использовать функциональный компонент
-  const menuHeight = useComponentSize(menuRef).height;
-  let currentHeight = 0;
+  const menuHeight = useComponentSize(menuRef).height
 
   function toggleMenu(): void {
     setVisible(!visible)
@@ -23,7 +21,7 @@ function MobileHamburger(): React.Component {
       <button onClick={toggleMenu} className="button-transparent" id="menu-mobile-icon">
         <Hamburger rounded color="#0d7fa3"/>
       </button>
-      <div id="float-menu" style={{ height: visible ? menuHeight+'px' : '0px' }}>
+      <div id="float-menu" style={{ height: visible ? menuHeight+"px" : "0px" }}>
         <div ref={menuRef}>
           <Links />
         </div>
@@ -33,10 +31,6 @@ function MobileHamburger(): React.Component {
 }
 
 class Logo extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <Link href="/">
@@ -54,10 +48,6 @@ interface ILinksInterface {
 }
 
 class NavLink extends React.Component<ILinksInterface> {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <Link href={this.props.href}>
@@ -68,10 +58,6 @@ class NavLink extends React.Component<ILinksInterface> {
 }
 
 class Links extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="top-nav">
@@ -85,16 +71,12 @@ class Links extends React.Component {
 }
 
 class Button extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   handleClick(): void {
-    scrollIntoView(document.querySelector('#support-widget'), {
-      behavior: 'smooth',
-      scrollMode: 'if-needed',
-      block: 'start',
-      inline: 'nearest',
+    scrollIntoView(document.querySelector("#support-widget"), {
+      behavior: "smooth",
+      scrollMode: "if-needed",
+      block: "start",
+      inline: "nearest",
     })
   }
 

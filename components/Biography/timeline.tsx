@@ -1,15 +1,10 @@
-import React, { Component } from 'react'
-import { default as $D } from 'dedent'
+import React from "react"
 
 interface IBio {
-  year: Number;
+  year: number;
 }
 
 class TimelineEvent extends React.Component<IBio> {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <tr>
@@ -27,7 +22,7 @@ class TimelineEvent extends React.Component<IBio> {
 }
 
 export default class Timeline extends React.Component {
-  render() {
+  render(): void {
     return (<>
       <div id="timeline">
         <table id="timeline-table">
@@ -47,7 +42,7 @@ export default class Timeline extends React.Component {
             <TimelineEvent year={1996}>
               Абоба идет в музыкальную школу гимназию в Луганске. Позже музыкальное образование
               ему понадобится, чтобы создать студию GVS и прославиться стыдным интервью без маски.
-              Сейчас весь свой талант он спускает на прямых потоках дерьма, делая "гадзы" и реп.
+              Сейчас весь свой талант он спускает на прямых потоках дерьма, делая &quot;гадзы&quot; и реп.
             </TimelineEvent>
             <TimelineEvent year={2007}>
               Абоба поступает в Восточно-Украинский национальный университет им. Владимира Даля,

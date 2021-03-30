@@ -1,6 +1,43 @@
-import React from 'react'
-import Head from 'next/head'
-import head from './head'
+import React from "react"
+import Head from "next/head"
+import head from "./head"
+
+class GoogleAnalytics extends React.Component {
+  render(){
+    return (
+      <>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138253997-12"></script>
+        <script>
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-138253997-12');`}
+        </script>
+      </>
+    )
+  }
+}
+
+class YandexMetrika extends React.Component {
+  render(){
+    return (
+      <>
+        <script type="text/javascript">
+          {`(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+         m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+         ym(74780605, "init", {
+              clickmap:true,
+              trackLinks:true,
+              accurateTrackBounce:true
+         });`}
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/74780605"/></div></noscript>
+      </>
+    )
+  }
+}
 
 export default class AppHead extends React.Component {
   constructor(props){
@@ -28,21 +65,8 @@ export default class AppHead extends React.Component {
         <meta name="twitter:description" content={head.description}/>
         <meta name="twitter:image:src" content={head.images._1200x630}/>
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138253997-12"></script>
-        <script>
-          {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'UA-138253997-12');`}
-        </script>
-
-        <script type="text/javascript">
-           {`(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-           m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-           ym(74780605, "init", {clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});`}
-        </script>
-        <noscript><div><img src="https://mc.yandex.ru/watch/74780605" style={{position: 'absolute', left: '-9999px'}} alt="" /></div></noscript>
+        <GoogleAnalytics />
+        <YandexMetrika />
       </Head>
     )
   }

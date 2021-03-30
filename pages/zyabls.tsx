@@ -1,16 +1,19 @@
-import AppHead from '../data/AppHead'
-import Header from '../components/Common/header'
-import Footer from '../components/Common/footer'
-import Zyabls from '../components/zyabls'
+import React from "react"
+import AppHead from "../data/AppHead"
+import Header from "../components/Common/header"
+import Footer from "../components/Common/footer"
+import Zyabls from "../components/zyabls"
 
-export default function Bio(): JSX.Element {
-  return (
-    <div>
-      <AppHead />
+export default class Bio extends React.Component {
+  render() {
+    return (
+      <div>
+        <AppHead />
 
-      <Header />
-      <Zyabls />
-      <Footer />
-    </div>
-  )
+        <Header />
+        <Zyabls />
+        <Footer />
+      </div>
+    )
+  }
 }

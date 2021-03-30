@@ -1,10 +1,6 @@
-import React from 'react'
+import React from "react"
 
 class GalleryPhoho extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div className={this.props.expand?"ribbon-photo-container wide":"ribbon-photo-container"}>
@@ -15,10 +11,6 @@ class GalleryPhoho extends React.Component {
 }
 
 export default class GalleryRibbon extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="gallery-ribbon">

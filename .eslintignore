@@ -1,0 +1,30 @@
+# standart
+/node_modules/**
+/.next/**
+/.git/**
+next.config.js
+.eslintrc.js
+
+# packages
+package-lock.json
+yarn.lock
+less-watcher.config.json
+
+# markdown files
+LICENSE
+README.md
+CONTRIBUTING.md
+
+# images
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.ico
+
+# styles
+*.css
+*.css.map
+*.less
+
+*.woff2

@@ -15,7 +15,7 @@
     "concurrently": "^6.0.0",
     "dedent": "^0.7.0",
     "hamburger-react": "^2.4.0",
-    "next": "10.0.9",
+    "next": "10.1.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-ga": "^3.3.0",
@@ -27,7 +27,11 @@
   "devDependencies": {
     "@types/node": "^14.14.37",
     "@types/react": "^17.0.3",
-    "less": "^3.13.1",
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "eslint": "^7.23.0",
+    "eslint-plugin-react": "^7.23.1",
+    "less": "^4.1.1",
     "less-loader": "^8.0.0",
     "less-watch-compiler": "^1.14.6",
     "typescript": "^4.2.3"

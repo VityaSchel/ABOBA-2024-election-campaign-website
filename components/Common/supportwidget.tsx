@@ -1,30 +1,30 @@
-import React from 'react'
+import React from "react"
 
 class Tab extends React.Component {
   constructor (props){
-    super(props);
+    super(props)
 
     this.ref = React.createRef()
   }
 
   enable(): void {
-    this.ref.current.style.display = ''
+    this.ref.current.style.display = ""
   }
 
   disable(): void {
-    this.ref.current.style.display = 'none'
+    this.ref.current.style.display = "none"
   }
 
   render(){
     return (
-      <div className="switch-tab-content" for={this.props.for} ref={this.ref}
-        style={this.props.selected?{}:{display: 'none'}}>
+      <div className="switch-tab-content" htmlFor={this.props.for} ref={this.ref}
+        style={this.props.selected?{}:{display: "none"}}>
         <div>
           <h2 className="primary-heading">{this.props.heading}</h2>
           {this.props.children}
         </div>
         <div className="action-button">
-          <a className="glow-button" href={this.props.link.href} target="_blank">{this.props.link.label}</a>
+          <a className="glow-button" href={this.props.link.href} target="_blank" rel="noreferrer">{this.props.link.label}</a>
         </div>
       </div>
     )
@@ -38,19 +38,19 @@ interface ITabButton {
   children: string;
 }
 
-class TabButton extends React.Component {
+class TabButton extends React.Component<ITabButton> {
   constructor (props){
-    super(props);
+    super(props)
 
     this.ref = React.createRef()
   }
 
   enable(): void {
-    this.ref.current.classList.add('selected')
+    this.ref.current.classList.add("selected")
   }
 
   disable(): void {
-    this.ref.current.classList.remove('selected')
+    this.ref.current.classList.remove("selected")
   }
 
   render(){
@@ -65,10 +65,10 @@ class TabButton extends React.Component {
 
 class TabSwitcher extends React.Component {
   constructor (props){
-    super(props);
+    super(props)
 
     this.state = {
-      selected: 'gadza-online-tab'
+      selected: "gadza-online-tab"
     }
 
     this.switcher = React.createRef()
@@ -102,7 +102,7 @@ class TabSwitcher extends React.Component {
           <TabButton tab="aboba2024-github" e={e => this.handleClick(e)} ref={this.tabButtons[3]}>Абоба 2024 — GitHub</TabButton>
         </div>
         <Tab for="gadza-online-tab" heading='Сайт-коллекция гадз'
-             link={{label: 'Перейти', href: 'https://гадзы.online'}} selected ref={this.tabs[0]}>
+          link={{label: "Перейти", href: "https://гадзы.online"}} selected ref={this.tabs[0]}>
           <p>
             Сайт-коллекция «гадз» Глада Валакаса появился 20 февраля 2020 года.
             2 августа 2020 его посетил сам Валерий. 20 февраля 2021 сайт обновился
@@ -110,7 +110,7 @@ class TabSwitcher extends React.Component {
           </p>
         </Tab>
         <Tab for="gadza-telega-tab" heading='Канал с гадзами в телеграме'
-             link={{label: '@gadzas', href: 'https://t.me/gadzas'}} ref={this.tabs[1]}>
+          link={{label: "@gadzas", href: "https://t.me/gadzas"}} ref={this.tabs[1]}>
           <p>
             Телеграм канал с гадзами, появившийся после крупного обновления
             сайта-коллекции «гадз» Глада Валакаса 20 февраля 2020, публикует
@@ -118,7 +118,7 @@ class TabSwitcher extends React.Component {
           </p>
         </Tab>
         <Tab for="aboba-domain-tab" heading='Сделайте пожертвование'
-             link={{label: 'Пожертвовать', href: 'https://streamgum.com/vityaschel'}} ref={this.tabs[2]}>
+          link={{label: "Пожертвовать", href: "https://streamgum.com/vityaschel"}} ref={this.tabs[2]}>
           <p>
             Сайт предвыборной кампании Абобы нуждается в вашей поддержке!
             Ежегодно я трачу тысячи рублей на продление жизни таким проектам
@@ -127,7 +127,7 @@ class TabSwitcher extends React.Component {
           </p>
         </Tab>
         <Tab for="aboba2024-github" heading='Открытый код сайта'
-             link={{label: 'ABOBA2024', href: 'https://github.com/VityaSchel/ABOBA-2024-election-campaign-website'}} ref={this.tabs[3]}>
+          link={{label: "ABOBA2024", href: "https://github.com/VityaSchel/ABOBA-2024-election-campaign-website"}} ref={this.tabs[3]}>
           <p>
             Я буду вам благодарен за любой вклад в разработку сайта! Не
             стесняйтесь исправлять ошибки, добавлять новые страницы и
@@ -141,10 +141,6 @@ class TabSwitcher extends React.Component {
 }
 
 export default class SupportWidget extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="support-widget">

@@ -1,11 +1,7 @@
-import React from 'react'
-import Slogan from '../Common/slogan'
+import React from "react"
+import Slogan from "../Common/slogan"
 
 export default class BannerErrorPage extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="error-page-wrapper">

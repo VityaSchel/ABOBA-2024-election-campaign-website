@@ -1,9 +1,8 @@
-import React from 'react'
-import Link from 'next/link'
-import Banner from '../components/MainPage/banner'
-import Articles from '../components/MainPage/articles'
-import SupportWidget from '../components/Common/supportwidget'
-import Slider from '../components/MainPage/slider'
+import React from "react"
+import Banner from "../components/MainPage/banner"
+import Articles from "../components/MainPage/articles"
+import SupportWidget from "../components/Common/supportwidget"
+import Slider from "../components/MainPage/slider"
 
 export default class Main extends React.Component {
   constructor(props){
