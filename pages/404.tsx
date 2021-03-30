@@ -5,10 +5,6 @@ import Footer from '../components/Common/footer'
 import BannerErrorPage from '../components/ErrorPage/banner-error-page'
 
 export default class Page404 extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <main>

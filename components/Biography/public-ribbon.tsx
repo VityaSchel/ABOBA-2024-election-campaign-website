@@ -6,10 +6,6 @@ interface IPublicEventProps {
 }
 
 class PublicEvent extends Component<IPublicEventProps> {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div>
@@ -21,10 +17,6 @@ class PublicEvent extends Component<IPublicEventProps> {
 }
 
 export default class PublicRibbon extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="public-ribbon">

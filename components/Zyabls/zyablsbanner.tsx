@@ -2,10 +2,6 @@ import React from 'react'
 import Form from '../Common/form'
 
 class ZyablsInfo extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="get-in-promo">
@@ -26,10 +22,6 @@ class ZyablsInfo extends React.Component {
 }
 
 export default class ZyablsBanner extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="banner" className="krolik">

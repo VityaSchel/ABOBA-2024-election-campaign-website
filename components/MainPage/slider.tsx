@@ -47,10 +47,6 @@ class Slider extends React.Component {
 }
 
 export default class slider extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="slider-outer">

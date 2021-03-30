@@ -5,10 +5,6 @@ import SupportWidget from './Common/supportwidget'
 import GalleryRibbon from './Common/galleryribbon'
 
 class ZyablsInfo extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="zyabls">

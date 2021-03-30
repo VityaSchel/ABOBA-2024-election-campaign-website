@@ -3,10 +3,6 @@ import Link from 'next/link'
 import slidesData from '../../data/comments'
 
 class Person extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div className="contact-person">
@@ -22,10 +18,6 @@ class Person extends React.Component {
 }
 
 class ContactPersons extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="contact-flex">
@@ -75,10 +67,6 @@ class CommentText extends React.Component {
 }
 
 class Comments extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     const comments = slidesData.map(comment => {
       return (
@@ -104,10 +92,6 @@ class Comments extends React.Component {
 }
 
 export default class PeopleComments extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="people-comments">

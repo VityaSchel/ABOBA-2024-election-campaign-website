@@ -6,10 +6,6 @@ interface IBio {
 }
 
 class TimelineEvent extends React.Component<IBio> {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <tr>

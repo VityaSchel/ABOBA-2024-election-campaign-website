@@ -3,10 +3,6 @@ import Form from '../Common/form'
 import Slogan from '../Common/slogan'
 
 class LongBioText extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="get-in-promo">
@@ -26,10 +22,6 @@ class LongBioText extends React.Component {
 }
 
 class LongBio extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="long-bio">
@@ -41,10 +33,6 @@ class LongBio extends React.Component {
 }
 
 export default class BioBanner extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="banner" className="family">

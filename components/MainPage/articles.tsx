@@ -1,10 +1,6 @@
 import React from 'react'
 
 class Article extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <article id="news-article">
@@ -16,10 +12,6 @@ class Article extends React.Component {
 }
 
 class ShortArticlesList extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     interface ArticleInterface {
       id: number; title: string; date: string;
@@ -36,10 +28,6 @@ class ShortArticlesList extends React.Component {
 }
 
 class AchievementsList extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="achievements">
@@ -55,10 +43,6 @@ interface IAchievement {
 }
 
 class Achievement extends React.Component<IAchievement> {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <article id="achievement-article">
@@ -69,10 +53,6 @@ class Achievement extends React.Component<IAchievement> {
   }
 }
 class BigThumbs extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="big-thumbs">
@@ -95,10 +75,6 @@ interface ISmallAchievement {
 }
 
 class SmallAchievement extends React.Component<ISmallAchievement> {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <article id="small-achievement-article">
@@ -110,10 +86,6 @@ class SmallAchievement extends React.Component<ISmallAchievement> {
 }
 
 class SmallThumbs extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
 
     return (
@@ -132,10 +104,6 @@ class SmallThumbs extends React.Component {
 }
 
 export default class Articles extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <section id="last-news">

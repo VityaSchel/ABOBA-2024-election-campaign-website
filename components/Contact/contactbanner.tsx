@@ -2,10 +2,6 @@ import React from 'react'
 import Donaters from './donaters'
 
 class Person extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div className="contact-person">
@@ -21,10 +17,6 @@ class Person extends React.Component {
 }
 
 class ContactPersons extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="contact-flex">
@@ -45,10 +37,6 @@ class ContactPersons extends React.Component {
 }
 
 class ContactInfo extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="get-in-promo">
@@ -84,10 +72,6 @@ class ContactInfo extends React.Component {
 }
 
 export default class ContactBanner extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="banner" className="puregray">

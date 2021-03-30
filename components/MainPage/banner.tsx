@@ -23,10 +23,6 @@ class VideoPopupLink extends React.Component {
 }
 
 class ShortBio extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="short-bio">
@@ -38,10 +34,6 @@ class ShortBio extends React.Component {
 }
 
 class GetInPromo extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="get-in-promo">
@@ -57,10 +49,6 @@ class GetInPromo extends React.Component {
 }
 
 class Info extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <>

@@ -3,10 +3,6 @@ import Link from 'next/link'
 import donaters from '../../data/donaters.tsx'
 
 class Donate extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div className="aboba-donate">
@@ -25,10 +21,6 @@ class Donate extends React.Component {
 }
 
 export default class Donaters extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     const donates = donaters.map(don => <Donate don={don} key={don.id} />)
 

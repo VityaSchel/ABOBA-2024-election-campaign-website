@@ -2,10 +2,6 @@ import React from 'react'
 import Form from '../Common/form'
 
 class ContactInfo extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="get-in-promo" className="comments-banner">
@@ -26,10 +22,6 @@ class ContactInfo extends React.Component {
 }
 
 export default class PeopleComments extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="banner" className="europecity">

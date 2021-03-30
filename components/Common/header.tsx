@@ -33,10 +33,6 @@ function MobileHamburger(): React.Component {
 }
 
 class Logo extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <Link href="/">
@@ -54,10 +50,6 @@ interface ILinksInterface {
 }
 
 class NavLink extends React.Component<ILinksInterface> {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <Link href={this.props.href}>
@@ -68,10 +60,6 @@ class NavLink extends React.Component<ILinksInterface> {
 }
 
 class Links extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <div id="top-nav">
@@ -85,10 +73,6 @@ class Links extends React.Component {
 }
 
 class Button extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   handleClick(): void {
     scrollIntoView(document.querySelector('#support-widget'), {
       behavior: 'smooth',

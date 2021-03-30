@@ -6,10 +6,6 @@ import BioBanner from './Biography/bio-banner'
 import PublicRibbon from './Biography/public-ribbon'
 
 export default class Biography extends React.Component {
-  constructor (props){
-    super(props);
-  }
-
   render(){
     return (
       <main>
