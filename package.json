@@ -21,7 +21,7 @@
     "react-ga": "^3.3.0",
     "react-spring": "^9.0.0",
     "scroll-into-view-if-needed": "^2.2.28",
-    "swiper": "^6.5.2",
+    "swiper": "^6.5.3",
     "ts-loader": "^8.1.0"
   },
   "devDependencies": {

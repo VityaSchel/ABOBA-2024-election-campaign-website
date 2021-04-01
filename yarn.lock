@@ -2792,9 +2792,9 @@ supports-color@^8.0.0, supports-color@^8.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-swiper@^6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-6.5.2.tgz#c72596486ed91ce63d0cf4e96a551494fcd352a0"
+swiper@^6.5.3:
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-6.5.3.tgz#ff42617dd87277bd0f622c729572d3db47bee225"
   dependencies:
     dom7 "^3.0.0"
     ssr-window "^3.0.0"
