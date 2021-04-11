@@ -118,7 +118,7 @@ class TabSwitcher extends React.Component {
           </p>
         </Tab>
         <Tab for="aboba-domain-tab" heading='Сделайте пожертвование'
-          link={{label: "Пожертвовать", href: "https://streamgum.com/vityaschel"}} ref={this.tabs[2]}>
+          link={{label: "Пожертвовать", href: "https://www.donationalerts.com/r/vityaschel"}} ref={this.tabs[2]}>
           <p>
             Сайт предвыборной кампании Абобы нуждается в вашей поддержке!
             Ежегодно я трачу тысячи рублей на продление жизни таким проектам
