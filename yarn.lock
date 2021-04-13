@@ -2,10 +2,6 @@
 # yarn lockfile v1
 
 
-"@alloc/types@^1.2.1":
-  version "1.3.0"
-  resolved "https://registry.npmjs.org/@alloc/types/-/types-1.3.0.tgz"
-
 "@babel/code-frame@7.12.11", "@babel/code-frame@^7.0.0":
   version "7.12.11"
   resolved "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.12.11.tgz"
@@ -135,81 +131,76 @@
   version "0.14.0"
   resolved "https://registry.npmjs.org/@opentelemetry/context-base/-/context-base-0.14.0.tgz"
 
-"@react-spring/animated@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.npmjs.org/@react-spring/animated/-/animated-9.0.0.tgz"
+"@react-spring/animated@~9.1.1":
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/@react-spring/animated/-/animated-9.1.1.tgz#996db774bbc42fb37838580674c4ade4f2d99f20"
   dependencies:
-    "@react-spring/shared" "^9.0.0"
-    "@react-spring/types" "^9.0.0"
-    react-layout-effect "^1.0.1"
+    "@react-spring/shared" "~9.1.1"
+    "@react-spring/types" "~9.1.1"
 
-"@react-spring/core@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.npmjs.org/@react-spring/core/-/core-9.0.0.tgz"
+"@react-spring/core@~9.1.1":
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/@react-spring/core/-/core-9.1.1.tgz#0d109c9f921bf957dcb65340a4192061f28e5cb2"
   dependencies:
-    "@react-spring/animated" "^9.0.0"
-    "@react-spring/shared" "^9.0.0"
-    "@react-spring/types" "^9.0.0"
-    react-layout-effect "^1.0.1"
+    "@react-spring/animated" "~9.1.1"
+    "@react-spring/shared" "~9.1.1"
+    "@react-spring/types" "~9.1.1"
 
-"@react-spring/konva@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.npmjs.org/@react-spring/konva/-/konva-9.0.0.tgz"
+"@react-spring/konva@~9.1.1":
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/@react-spring/konva/-/konva-9.1.1.tgz#811b4baed651b9ffb8eb40caec7e80b6af6f446c"
   dependencies:
-    "@react-spring/animated" "^9.0.0"
-    "@react-spring/core" "^9.0.0"
-    "@react-spring/shared" "^9.0.0"
-    "@react-spring/types" "^9.0.0"
+    "@react-spring/animated" "~9.1.1"
+    "@react-spring/core" "~9.1.1"
+    "@react-spring/shared" "~9.1.1"
+    "@react-spring/types" "~9.1.1"
 
-"@react-spring/native@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.npmjs.org/@react-spring/native/-/native-9.0.0.tgz"
+"@react-spring/native@~9.1.1":
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/@react-spring/native/-/native-9.1.1.tgz#484d335372ed180bebb9edcfde8b7d4370239207"
   dependencies:
-    "@react-spring/animated" "^9.0.0"
-    "@react-spring/core" "^9.0.0"
-    "@react-spring/shared" "^9.0.0"
-    "@react-spring/types" "^9.0.0"
+    "@react-spring/animated" "~9.1.1"
+    "@react-spring/core" "~9.1.1"
+    "@react-spring/shared" "~9.1.1"
+    "@react-spring/types" "~9.1.1"
 
-"@react-spring/shared@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.npmjs.org/@react-spring/shared/-/shared-9.0.0.tgz"
+"@react-spring/shared@~9.1.1":
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/@react-spring/shared/-/shared-9.1.1.tgz#9f7b1a4051a0c71e0167805e7d499071b2aabddc"
   dependencies:
-    "@react-spring/types" "^9.0.0"
-    fluids "^0.2.2"
-    rafz "^0.1.13"
+    "@react-spring/types" "~9.1.1"
+    rafz "^0.1.14"
 
-"@react-spring/three@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.npmjs.org/@react-spring/three/-/three-9.0.0.tgz"
+"@react-spring/three@~9.1.1":
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/@react-spring/three/-/three-9.1.1.tgz#ba06152963ae592f6fb3e10487c325e623261788"
   dependencies:
-    "@react-spring/animated" "^9.0.0"
-    "@react-spring/core" "^9.0.0"
-    "@react-spring/shared" "^9.0.0"
-    "@react-spring/types" "^9.0.0"
+    "@react-spring/animated" "~9.1.1"
+    "@react-spring/core" "~9.1.1"
+    "@react-spring/shared" "~9.1.1"
+    "@react-spring/types" "~9.1.1"
 
-"@react-spring/types@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.npmjs.org/@react-spring/types/-/types-9.0.0.tgz"
-  dependencies:
-    "@alloc/types" "^1.2.1"
+"@react-spring/types@~9.1.1":
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/@react-spring/types/-/types-9.1.1.tgz#0e53317018b81c4716a776e65477c8b0ee62758e"
 
-"@react-spring/web@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.npmjs.org/@react-spring/web/-/web-9.0.0.tgz"
+"@react-spring/web@~9.1.1":
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/@react-spring/web/-/web-9.1.1.tgz#f7ff454631d0e495887ed4631672982e1e6fb500"
   dependencies:
-    "@react-spring/animated" "^9.0.0"
-    "@react-spring/core" "^9.0.0"
-    "@react-spring/shared" "^9.0.0"
-    "@react-spring/types" "^9.0.0"
+    "@react-spring/animated" "~9.1.1"
+    "@react-spring/core" "~9.1.1"
+    "@react-spring/shared" "~9.1.1"
+    "@react-spring/types" "~9.1.1"
 
-"@react-spring/zdog@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.npmjs.org/@react-spring/zdog/-/zdog-9.0.0.tgz"
+"@react-spring/zdog@~9.1.1":
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/@react-spring/zdog/-/zdog-9.1.1.tgz#8a79a957a89141bf2281b597e98d9a8327a6ba15"
   dependencies:
-    "@react-spring/animated" "^9.0.0"
-    "@react-spring/core" "^9.0.0"
-    "@react-spring/shared" "^9.0.0"
-    "@react-spring/types" "^9.0.0"
+    "@react-spring/animated" "~9.1.1"
+    "@react-spring/core" "~9.1.1"
+    "@react-spring/shared" "~9.1.1"
+    "@react-spring/types" "~9.1.1"
 
 "@rehooks/component-size@^1.0.3":
   version "1.0.3"
@@ -1238,10 +1229,6 @@ flat-cache@^3.0.4:
 flatted@^3.1.0:
   version "3.1.1"
   resolved "https://registry.npmjs.org/flatted/-/flatted-3.1.1.tgz"
-
-fluids@^0.2.2:
-  version "0.2.8"
-  resolved "https://registry.npmjs.org/fluids/-/fluids-0.2.8.tgz"
 
 foreach@^2.0.5:
   version "2.0.5"
@@ -2307,9 +2294,9 @@ queue-microtask@^1.2.2:
   version "1.2.3"
   resolved "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
 
-rafz@^0.1.13:
+rafz@^0.1.14:
   version "0.1.14"
-  resolved "https://registry.npmjs.org/rafz/-/rafz-0.1.14.tgz"
+  resolved "https://registry.yarnpkg.com/rafz/-/rafz-0.1.14.tgz#164f01cf7cc6094e08467247ef351ef5c8d278fe"
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
@@ -2353,24 +2340,20 @@ react-is@^17.0.1:
   version "17.0.2"
   resolved "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz"
 
-react-layout-effect@^1.0.1:
-  version "1.0.5"
-  resolved "https://registry.npmjs.org/react-layout-effect/-/react-layout-effect-1.0.5.tgz"
-
 react-refresh@0.8.3:
   version "0.8.3"
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.8.3.tgz"
 
-react-spring@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.npmjs.org/react-spring/-/react-spring-9.0.0.tgz"
+react-spring@^9.1.1:
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/react-spring/-/react-spring-9.1.1.tgz#0771de37421501be2121631cff2b36d0331770e2"
   dependencies:
-    "@react-spring/core" "^9.0.0"
-    "@react-spring/konva" "^9.0.0"
-    "@react-spring/native" "^9.0.0"
-    "@react-spring/three" "^9.0.0"
-    "@react-spring/web" "^9.0.0"
-    "@react-spring/zdog" "^9.0.0"
+    "@react-spring/core" "~9.1.1"
+    "@react-spring/konva" "~9.1.1"
+    "@react-spring/native" "~9.1.1"
+    "@react-spring/three" "~9.1.1"
+    "@react-spring/web" "~9.1.1"
+    "@react-spring/zdog" "~9.1.1"
 
 react@17.0.2:
   version "17.0.2"
