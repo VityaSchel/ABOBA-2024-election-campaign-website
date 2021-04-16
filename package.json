@@ -32,7 +32,7 @@
     "eslint": "^7.23.0",
     "eslint-plugin-react": "^7.23.1",
     "less": "^4.1.1",
-    "less-loader": "^8.0.0",
+    "less-loader": "^8.1.1",
     "less-watch-compiler": "^1.14.6",
     "typescript": "^4.2.3"
   }
