@@ -1,6 +1,25 @@
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "daily"
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: ts-loader
+    versions:
+    - 9.0.0
+  - dependency-name: react-spring
+    versions:
+    - 9.1.0
+    - 9.1.1
+  - dependency-name: eslint
+    versions:
+    - 7.24.0
+  - dependency-name: swiper
+    versions:
+    - 6.5.5
+    - 6.5.6
+  - dependency-name: next
+    versions:
+    - 10.1.3
