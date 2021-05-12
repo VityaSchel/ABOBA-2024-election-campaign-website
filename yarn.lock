@@ -1336,9 +1336,9 @@ graceful-fs@^4.1.2:
   version "4.2.6"
   resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.6.tgz"
 
-hamburger-react@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.npmjs.org/hamburger-react/-/hamburger-react-2.4.0.tgz"
+hamburger-react@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/hamburger-react/-/hamburger-react-2.4.1.tgz#44fac99c30720fe8ed098b2a33e919b14b3e007e"
 
 has-bigints@^1.0.1:
   version "1.0.1"
@@ -2792,9 +2792,9 @@ supports-color@^8.0.0, supports-color@^8.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-swiper@^6.5.4:
-  version "6.5.4"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-6.5.4.tgz#b92a8d7771f4e3d9d5e02d598c8ab7f45533ab66"
+swiper@^6.6.1:
+  version "6.6.1"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-6.6.1.tgz#21a9fa645b6b48e330be69a211fe0e0105b2567c"
   dependencies:
     dom7 "^3.0.0"
     ssr-window "^3.0.0"
