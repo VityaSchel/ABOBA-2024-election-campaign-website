@@ -1700,9 +1700,9 @@ klona@^2.0.4:
   version "2.0.4"
   resolved "https://registry.npmjs.org/klona/-/klona-2.0.4.tgz"
 
-less-loader@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.npmjs.org/less-loader/-/less-loader-8.0.0.tgz"
+less-loader@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/less-loader/-/less-loader-8.1.0.tgz#8276adc16bf6576dd80b71563685a2cfe93b0a50"
   dependencies:
     klona "^2.0.4"
 
