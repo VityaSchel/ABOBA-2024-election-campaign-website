@@ -254,9 +254,9 @@
   version "15.7.3"
   resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.3.tgz"
 
-"@types/react-dom@^17.0.3":
-  version "17.0.3"
-  resolved "https://registry.npmjs.org/@types/react-dom/-/react-dom-17.0.3.tgz"
+"@types/react-dom@^17.0.5":
+  version "17.0.5"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.5.tgz#df44eed5b8d9e0b13bb0cd38e0ea6572a1231227"
   dependencies:
     "@types/react" "*"
 
