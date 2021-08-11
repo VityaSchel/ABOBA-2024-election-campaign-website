@@ -231,9 +231,9 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@^26.0.22":
-  version "26.0.22"
-  resolved "https://registry.npmjs.org/@types/jest/-/jest-26.0.22.tgz"
+"@types/jest@^27.0.0":
+  version "27.0.0"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-27.0.0.tgz#f1c28f741371739c7cd0e8edb5ed8e67acfa6c35"
   dependencies:
     jest-diff "^26.0.0"
     pretty-format "^26.0.0"
