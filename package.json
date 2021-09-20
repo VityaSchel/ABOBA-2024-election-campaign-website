@@ -2,9 +2,10 @@
   "name": "aboba",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "scripts": {
     "dev": "concurrently --kill-others 'less-watch-compiler --config less-watcher.config.json' 'next dev'",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start -p 2754",
     "deploy": "pm2 stop aboba && pm2 delete aboba && next build && pm2 start npm --name \"aboba\" -- start"
   },
