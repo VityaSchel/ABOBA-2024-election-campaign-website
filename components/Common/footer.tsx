@@ -7,7 +7,7 @@ export default class Footer extends React.Component {
         <div id="footer-info">
           <div id="contacts">
             <p>© 2021-2024 АБОБА</p>
-            <a href="mailto:gadza1488@гадзы.online" className="pseudo-link">gadza1488@гадзы.online</a>
+            <a href="mailto:vityaschel@utidteam.com" className="pseudo-link">vityaschel@utidteam.com</a>
           </div>
           <div id="note">
             <p>

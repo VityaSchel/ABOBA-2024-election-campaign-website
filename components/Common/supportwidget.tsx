@@ -96,13 +96,13 @@ class TabSwitcher extends React.Component {
     return (
       <div id="switcher" ref={this.switcher}>
         <div id="switcher-tabs">
-          <TabButton tab="gadza-online-tab" selected e={e => this.handleClick(e)} ref={this.tabButtons[0]}>Сайт гадзы.online</TabButton>
-          <TabButton tab="gadza-telega-tab" e={e => this.handleClick(e)} ref={this.tabButtons[1]}>Сайт гадзы.online</TabButton>
+          <TabButton tab="gadza-online-tab" selected e={e => this.handleClick(e)} ref={this.tabButtons[0]}>Сайт Гадзы Глада Валакаса</TabButton>
+          <TabButton tab="gadza-telega-tab" e={e => this.handleClick(e)} ref={this.tabButtons[1]}>Сайт Гадзы Глада Валакаса</TabButton>
           <TabButton tab="aboba-domain-tab" e={e => this.handleClick(e)} ref={this.tabButtons[2]}>Мне на домен абобы</TabButton>
           <TabButton tab="aboba2024-github" e={e => this.handleClick(e)} ref={this.tabButtons[3]}>Абоба 2024 — GitHub</TabButton>
         </div>
         <Tab for="gadza-online-tab" heading='Сайт-коллекция гадз'
-          link={{label: "Перейти", href: "https://гадзы.online"}} selected ref={this.tabs[0]}>
+          link={{label: "Перейти", href: "https://godzilla.utidteam.com"}} selected ref={this.tabs[0]}>
           <p>
             Сайт-коллекция «гадз» Глада Валакаса появился 20 февраля 2020 года.
             2 августа 2020 его посетил сам Валерий. 20 февраля 2021 сайт обновился
