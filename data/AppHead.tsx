@@ -6,13 +6,17 @@ class GoogleAnalytics extends React.Component {
   render(){
     return (
       <>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138253997-12"></script>
-        <script>
-          {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'UA-138253997-12');`}
-        </script>
+        <script async src="https://utidteam.com/gtm-proxy/*(d3d3Lmdvb2dsZXRhZ21hbmFnZXIuY29t)*/*(Z3RhZw)*/*(anM%2FaWQ9Ry1TVDBXWEVDUkc1)*" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-ST0WXECRG5', { page_path: window.location.pathname });
+            `,
+          }}
+        />
       </>
     )
   }
@@ -22,17 +26,20 @@ class YandexMetrika extends React.Component {
   render(){
     return (
       <>
-        <script type="text/javascript">
-          {`(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-         m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        <script type="text/javascript" dangerouslySetInnerHTML={{
+          __html: `
+          (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+           m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-         ym(74780605, "init", {
-              clickmap:true,
-              trackLinks:true,
-              accurateTrackBounce:true
-         });`}
-        </script>
+           ym(74780605, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true
+           });
+          `
+        }}
+        />
         <noscript><div><img src="https://mc.yandex.ru/watch/74780605"/></div></noscript>
       </>
     )
