@@ -2,6 +2,6 @@
   "watchFolder": "./styles/",
   "outputFolder": "./styles-compiled/",
   "sourceMap": true,
-  "runOnce": false,
+  "runOnce": true,
   "enableJs": true
 }
